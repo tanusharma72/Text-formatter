@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     text-align: center;
     background-color: rgb(174, 198, 207);
     height: 100vh;
@@ -12,29 +13,40 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     padding: 6rem;
     background-color: rgb(58, 56, 56);
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 10px 10px 5px rgb(223, 227, 229);
+    max-width: 100%;
 }
-.container h2{
+
+.container h2 {
     color: rgb(239, 237, 233);
     font-family: sans-serif;
     text-shadow: 2px 2px 8px #8bc5d4;
     font-size: 3rem;
     margin-bottom: 40px;
 }
-.input-container input{
+
+.input-container input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     outline: none;
-    border:2px solid #8bc2ce ;
+    border: 2px solid #8bc2ce;
     border-radius: 6px;
 }
-button{
+
+.btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
     padding: 10px;
     width: 140px;
     font-weight: bold;
@@ -47,9 +59,10 @@ button{
     border-radius: 5px;
     border: 1px solid white;
 }
-p{
-    width: 600px;
-    height: 600px;
+
+p {
+    width: 100%;
+    max-width: 600px;
     background: white;
     color: #000;
     height: 80px;
@@ -59,21 +72,65 @@ p{
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top:2rem ;
+    margin-top: 2rem;
     font-family: sans-serif;
 }
-.uppercase{
+
+.uppercase {
     text-transform: uppercase;
 }
-.lowercase{
+
+.lowercase {
     text-transform: lowercase;
 }
-.capitalize{
+
+.capitalize {
     text-transform: capitalize;
 }
-.underline{
+
+.underline {
     text-decoration: underline;
 }
-.italic{
+
+.italic {
     font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 4rem;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 120px;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100px;
+        padding: 8px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
