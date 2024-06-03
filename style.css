@@ -1,3 +1,85 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: rgb(174, 198, 207);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 6rem;
+    background-color: rgb(58, 56, 56);
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px rgb(223, 227, 229);
+}
+.container h2{
+    color: rgb(239, 237, 233);
+    font-family: sans-serif;
+    text-shadow: 2px 2px 8px #8bc5d4;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border:2px solid #8bc2ce ;
+    border-radius: 6px;
+}
+button{
+    padding: 10px;
+    width: 140px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(152, 215, 240);
+    box-shadow: 2px 2px 8px #8bc5d4;
+    color: rgb(54, 51, 51);
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+p{
+    width: 600px;
+    height: 600px;
+    background: white;
+    color: #000;
+    height: 80px;
+    border: 2px solid #8bc2ce;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:2rem ;
+    font-family: sans-serif;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.underline{
+    text-decoration: underline;
+}
+.italic{
+    font-style: italic;
+} */
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -96,7 +178,6 @@ p {
     font-style: italic;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -114,6 +195,7 @@ p {
 
     p {
         font-size: 0.9rem;
+        height: 60px;
     }
 }
 
@@ -133,10 +215,11 @@ p {
 
     p {
         font-size: 0.8rem;
+        height: 40px;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 360px) {
     .container {
         padding: 1rem;
     }
@@ -151,12 +234,7 @@ p {
     }
 
     p {
-        font-size: 0.5rem;
-    }
-}
-
-
-    p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        height: 30px;
     }
 }
