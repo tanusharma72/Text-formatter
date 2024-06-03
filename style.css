@@ -96,6 +96,7 @@ p {
     font-style: italic;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -107,7 +108,7 @@ p {
     }
 
     button {
-        width: 120px;
+        width: 140px;
         margin: 5px;
     }
 
@@ -126,9 +127,34 @@ p {
     }
 
     button {
-        width: 100px;
+        width: 140px;
         padding: 8px;
     }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 150px;
+        padding: 4px;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+}
+
 
     p {
         font-size: 0.8rem;
